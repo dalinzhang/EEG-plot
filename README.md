@@ -14,7 +14,7 @@ Valid kind arguments are:
 
 **Kind**                      Description
 
-**standard_1005`     **         Electrodes are named and positioned according to the international 10-05 system (343+3 locations)
+**standard_1005     **         Electrodes are named and positioned according to the international 10-05 system (343+3 locations)
 
 **standard_1020      **        Electrodes are named and positioned according to the international 10-20 system (94+3 locations)
 
