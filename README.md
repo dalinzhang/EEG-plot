@@ -29,5 +29,45 @@
    ```
    montage.plot(kind='3d')
    ```
+   
+3. get 2d plot positions
 
-3. 
+   ```
+   2d_loc = montage.get_pos2d()
+   ```
+
+
+## EEG montage info extraction
+
+1. create `info` object:
+   
+   `info`object description [here](https://mne-tools.github.io/dev/generated/mne.Info.html#mne.Info)
+
+   ```
+   info = mne.create_info(ch_names=montage.ch_names,
+                          sfreq=1,
+                          ch_types='eeg',
+                          montage=montage)
+   ```
+
+2. extract channel information:
+
+   ```
+   chs = info['chs']
+   ```
+   
+   `chs` is a list of all channels. Each element is the information of an EEG channel.
+   
+   **get channel names:**
+   
+   ```
+   ch_names = np.array([ch['ch_name'] for ch in chs])
+   ```
+   
+   **get 3d channel locations:**
+   
+   ```
+   pos = np.array([ch['loc'][:3] for ch in chs])   
+   ```
+   
+   
