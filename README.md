@@ -4,6 +4,8 @@
 
 1. create montage object of EEG channels using MNE build-in montages
 
+Function description [here](https://martinos.org/mne/stable/generated/mne.channels.read_montage.html#mne.channels.read_montage)
+
 ```
 montage = mne.channels.read_montage(kind='standard_1005')
 ```
