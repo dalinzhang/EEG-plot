@@ -16,7 +16,7 @@
 
 2. 2d/3d montage plot
 
-   Function description [here](https://martinos.org/mne/stable/generated/mne.channels.Montage.html#mne.channels.Montage)
+   Function description [here](https://martinos.org/mne/0.14/generated/mne.channels.Montage.html#mne.channels.Montage)
    
    **2d plot**
    
